@@ -54,7 +54,7 @@ for( int i=0; i<=5; i++) {
 
 //While Schleife
 
-/** While + If 
+ //While + If 
     int thomasiq = 62;
     while(thomasiq < 120){
   thomasiq = thomasiq + 11;
@@ -65,7 +65,7 @@ for( int i=0; i<=5; i++) {
       System.out.println("Thomas ist jetzt schlau genug und der IQ ist auf "+thomasiq+" gestiegen =)");
     }
 }
-*/
+
 
 
 
