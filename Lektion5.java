@@ -17,7 +17,7 @@ public class Lektion5 {
         }
 
         public String getKtoNr(){
-            return this.ktoNr
+            return this.ktoNr;
         }
 
         public void setStand(double stand){
@@ -25,8 +25,8 @@ public class Lektion5 {
         }
 
         public double getStand(){
-            return this.stand
+            return this.stand;
         }
-        
+
 }
 
