@@ -15,5 +15,13 @@ public void setName(String name){
 
 public abstract double monatsBrutto();
 
+public String getName() {
+    return name;
+}
+
+public void setGrundgehalt(double grundgehalt) {
+    this.grundgehalt = grundgehalt;
+}
+
 
 }
