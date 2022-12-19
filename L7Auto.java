@@ -21,7 +21,7 @@ public class L7Auto {
 
     //gibt objekt als string aus
     public String toString(){
-        return "Fahrgestellnummer:" + this.fahrgestellNr + ", " + this.Typ + " mit " + this.hubraum + "l Hubraum und  " + this.ps + "PS.";
+        return "Fahrgestellnummer:" + this.fahrgestellNr + ", " + this.Typ + " mit " + this.hubraum + "l Hubraum und " + this.ps + "PS.";
     }
 
 
