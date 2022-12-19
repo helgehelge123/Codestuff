@@ -6,8 +6,8 @@ public class L5Bank {
         System.out.println(gkto.auszahlen(10));
 
 //Zuweisungskompatibilität
-Lektion5 kto = new L5Girokonto();
-Lektion5 kto2 = new L5Sparkonto();
+//Lektion5 kto = new L5Girokonto();
+//ektion5 kto2 = new L5Sparkonto();
 
 
     }
