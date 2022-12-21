@@ -14,11 +14,13 @@ public static void main(String[] args){
 // constructor test
     L7Auto auto2 = new L7Auto("penis", 169, "golf 8", 1.23f);
     L7Auto auto3 = new L7Auto("Golf 9");
+    L7Auto auto4 = new L7Auto("vw", "penis", 169, "golf 8", 1.23f);
 
     // Ausgabe 
     System.out.println(auto.toString());
-    System.out.print(auto2.toString());
-    System.out.print(auto3.toString());
+    System.out.println(auto2.toString());
+    System.out.println(auto3.toString());
+    System.out.println(auto4.toString());
 }
 
 }

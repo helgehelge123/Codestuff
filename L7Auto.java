@@ -1,4 +1,4 @@
-public class L7Auto {
+public class L7Auto extends L7Fahrzeug {
     
     private String fahrgestellNr;
     private int ps;
@@ -10,21 +10,40 @@ public class L7Auto {
     public L7Auto(){
 
     }
-// Überladen des Standartkostruktors
+// // Überladen des Standartkostruktors
+//     public L7Auto(String fahrgestellNr, int ps, String typ, float hubraum) {
+//         this.fahrgestellNr = fahrgestellNr;
+//         this.ps = ps;
+//         this.typ = typ;
+//         this.hubraum = hubraum;
+//     }
+// Überladen des Standartkostruktors und extends thingi? 
+//Erklärung Wenn der Konstruktor aufgerufen wird, wird durch this(fahrgestellNr) der public L7Auto(String fahrgestellNr){...} konstruktor aufgerufen
+// und durch dessen this(); wird der standardkonstruktor aufgerufen. Danach geht es weiter mit this.ps.....
     public L7Auto(String fahrgestellNr, int ps, String typ, float hubraum) {
+        this(fahrgestellNr);
+        this.ps = ps;
+        this.typ = typ;
+        this.hubraum = hubraum;
+    }
+
+    public L7Auto(String hersteller, String fahrgestellNr, int ps, String typ, float hubraum) {
+        super(hersteller);
         this.fahrgestellNr = fahrgestellNr;
         this.ps = ps;
         this.typ = typ;
         this.hubraum = hubraum;
     }
+
 // Überladen funktioniert nur mit ungleichen parameterlisten
 // Würde nicht funktionieren, weil es 2 Konstruktoren mit Strings gibt
  
     // public L7Auto(String fahrgestellNr){
     // this.fahrgestellNr = fahrgestellNr;
     // }
-    public L7Auto(String typ){
-        this.typ=typ;
+    public L7Auto(String fahrgestellNr){
+        this();
+        this.fahrgestellNr=fahrgestellNr;
     }
 
 
@@ -44,7 +63,7 @@ public class L7Auto {
 
 //gibt objekt als string aus
     public String toString(){
-        return "Fahrgestellnummer:" + this.fahrgestellNr + ", " + this.typ + " mit " + this.hubraum + "l Hubraum und " + this.ps + "PS.";
+        return "Fahrgestellnummer:" + this.fahrgestellNr + ", " + this.typ + " mit " + this.hubraum + "l Hubraum und " + this.ps + "PS" + " von " + this.hersteller;
     }
 
 
