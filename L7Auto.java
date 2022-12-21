@@ -8,7 +8,6 @@ public class L7Auto extends L7Fahrzeug {
 
 //Constructor
     public L7Auto(){
-
     }
 // // Überladen des Standartkostruktors
 //     public L7Auto(String fahrgestellNr, int ps, String typ, float hubraum) {
@@ -17,6 +16,7 @@ public class L7Auto extends L7Fahrzeug {
 //         this.typ = typ;
 //         this.hubraum = hubraum;
 //     }
+
 // Überladen des Standartkostruktors und extends thingi? 
 //Erklärung Wenn der Konstruktor aufgerufen wird, wird durch this(fahrgestellNr) der public L7Auto(String fahrgestellNr){...} konstruktor aufgerufen
 // und durch dessen this(); wird der standardkonstruktor aufgerufen. Danach geht es weiter mit this.ps.....
