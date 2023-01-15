@@ -48,6 +48,12 @@ try{
 }
 
 
+//Nullpointer Exception Stuff
+
+L8Auto auto6 = new L8Auto("VW ", "1231", 105, "Kleinwagen", 1023);
+System.out.println(auto6.toString());
+
+
 //Ende
 }}
 
