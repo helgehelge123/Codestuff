@@ -7,3 +7,6 @@ public class L8Ausnahme_Info {
  * Ziel ist das Abfangen, damit das Prgramm weiter funktioniert
 */
 
+/* Ausnahme ist der zustand und
+ * Ausnahmebehandlungist der Umgang damit
+ */

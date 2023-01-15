@@ -30,6 +30,10 @@ public class L8Auto extends L8Fahrzeug {
     public L8Auto(int ps, int gewicht){
 
     }
+
+    public L8Auto(int ps){
+        this.ps = ps;
+    }
 // Überladen funktioniert nur mit ungleichen parameterlisten
 // Würde nicht funktionieren, weil es 2 Konstruktoren mit Strings gibt
  
@@ -61,7 +65,7 @@ public class L8Auto extends L8Fahrzeug {
 
 //gibt objekt als string aus
     public String toString(){
-        return "Fahrgestellnummer:" + this.fahrgestellNr + ", " + this.typ + " mit " + this.hubraum + "l Hubraum und " + this.ps + "PS" + " von " + this.hersteller;
+        return "Fahrgestellnummer:" + this.fahrgestellNr + ", " + this.typ + " mit " + this.hubraum + "l Hubraum und " + this.ps + "PS" + " von " + this.hersteller + "und wiegt in kg: " + this.gewicht;
     }
 
 //Leistungsgewicht berechnen, Exeption Beispiel
@@ -85,7 +89,25 @@ public float berechneLeistungsgewicht(int gewicht) throws ArithmeticException{
     float lg = 0;
         lg = this.ps / gewicht;
         return lg;
+}
 
+//Leistungsberechnung mit eigener Exception
+public float berechneLeistungsgewichtMeldung(int gewicht) throws L8GewichtNullException{
+    if(gewicht>0) {
+        float lg = this.ps / gewicht;
+        return lg;
+    } else {
+        throw new L8GewichtNullException();
+    }
+}
+//Leistungsberechnung mit eigener Exception
+public float berechneLeistungsgewichtEigeneMeldung(int gewicht) throws L8GewichtNullException{
+    if(gewicht>0) {
+        float lg = this.ps / gewicht;
+        return lg;
+    } else {
+        throw new L8GewichtNullException("Fehler in der Methode L8BerechneLeistungsgewichtMeldung!");
+    }
 }
 
 }

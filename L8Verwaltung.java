@@ -23,15 +23,32 @@ public static void main(String[] args){
     System.out.println(auto4.toString()); */
 
     //Test ausgabe Constructor gewicht
-try{
-L8Auto auto5 = new L8Auto(105, 1400);
-    System.out.println(auto5.berechneLeistungsgewicht(2));
-}
+/* dunno, fuinktioniert nicht als construktor 
+    L8Auto auto5 = new L8Auto(105, 1000);
+        auto5.setPs(1500); */
 
-catch (ArithmeticException aex){
+    L8Auto auto5 = new L8Auto(105);
+
+try{
+    System.out.println(auto5.berechneLeistungsgewicht(1000));
+} catch (ArithmeticException aex){
     System.out.println("Fehler:" + aex );
 }
+//mit eigener Fehlkerbehandlung und Standardfehlermeldung aus StandardException konstruktor
+try{
+    System.out.println(auto5.berechneLeistungsgewichtMeldung(1000));
+} catch (L8GewichtNullException gne) {
+    System.out.println("Fehler:" + gne.getMessage());
+}
+// mit eiegner Fehlerbehandlung und eigener Fehlermeldung aus neuem Konstruktor
+try{
+    System.out.println(auto5.berechneLeistungsgewichtEigeneMeldung(1000));
+} catch (L8GewichtNullException gne) {
+    System.out.println("Fehler:" + gne.getMessage());
+}
 
+
+//Ende
 }}
 
 
