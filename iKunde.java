@@ -1,5 +1,5 @@
-public interface iKunde {
-    
+public interface IKunde {
+
     public double berechneSteuern();
 
 }
