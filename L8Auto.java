@@ -87,23 +87,24 @@ public class L8Auto extends L8Fahrzeug {
 //Exception wird per throw gehandled
 public float berechneLeistungsgewicht(int gewicht) throws ArithmeticException{
     float lg = 0;
-        lg = this.ps / gewicht;
+        lg = this.ps / (float)gewicht;
         return lg;
 }
 
 //Leistungsberechnung mit eigener Exception
 public float berechneLeistungsgewichtMeldung(int gewicht) throws L8GewichtNullException{
     if(gewicht>0) {
-        float lg = this.ps / gewicht;
+        float lg = this.ps / (float)gewicht;
         return lg;
     } else {
         throw new L8GewichtNullException();
     }
 }
+
 //Leistungsberechnung mit eigener Exception
 public float berechneLeistungsgewichtEigeneMeldung(int gewicht) throws L8GewichtNullException{
     if(gewicht>0) {
-        float lg = this.ps / gewicht;
+        float lg = this.ps / (float)gewicht;
         return lg;
     } else {
         throw new L8GewichtNullException("Fehler in der Methode L8BerechneLeistungsgewichtMeldung!");

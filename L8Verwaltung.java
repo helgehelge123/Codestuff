@@ -30,7 +30,7 @@ public static void main(String[] args){
     L8Auto auto5 = new L8Auto(105);
 
 try{
-    System.out.println(auto5.berechneLeistungsgewicht(1000));
+    System.out.println(auto5.berechneLeistungsgewicht(10));
 } catch (ArithmeticException aex){
     System.out.println("Fehler:" + aex );
 }
